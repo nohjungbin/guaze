@@ -14,7 +14,7 @@ let A_count = 0
 let B_count = 0
 basic.forever(function () {
     if (input.buttonIsPressed(Button.AB)) {
-        if (true) {
+        if (A_count == 1 && B_count == 1) {
         	
         } else {
             if (true) {
@@ -30,6 +30,8 @@ basic.forever(function () {
                     }
                 }
             }
+            A_count = 0
+            B_count = 0
         }
     }
     music.setBuiltInSpeakerEnabled(true)
